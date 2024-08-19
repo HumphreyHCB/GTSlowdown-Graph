@@ -11,7 +11,6 @@ share/
 
 # script outputs
 *.tex
-*.pdf
 !PostPaper/*.pdf
 
 # full of windows bat and exes
