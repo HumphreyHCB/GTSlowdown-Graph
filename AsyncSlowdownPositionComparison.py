@@ -56,7 +56,7 @@ plt.xlabel('Method Agreement')
 plt.ylabel('Benchmark')
 plt.tight_layout()
 
-plt.savefig("AsyncSlowdownPositionComparisonMatrix.pdf.pdf")
+plt.savefig("AsyncSlowdownPositionComparisonMatrix.pdf")
 
 plt.show()
 
