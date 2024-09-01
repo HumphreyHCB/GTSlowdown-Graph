@@ -1,0 +1,10 @@
+JustNOPs : for a given cost of a LIR we insert proportional NOPS
+JustSFence : instead we do SFences
+Vector 1: This involved finding all blocks and successors and predecessors that matched vector lookup and instrumenting them with sfences, as well as NOPs for the rest.
+Vector 2: This involved finding all blocks that matched vector lookup and instrumenting them with sfence ( no predecessors or successors) as well as NOPs.
+Vector 3: We instrument a NOP or a vector on a per-instruction level in each block, we had a breakdown cost for each Lir.
+Vector 4: Introduced a new per-instruction cost, so LIR now has a normal cost and Vcost, and we round up to the nearest integer.
+Vector 5: Introduced a new per-instruction cost, so LIR now has a normal cost and Vcost, and we round up to the nearest integer. What's new: changed the threshold from 1000 to 500.
+Vector 6: Introduced a new per-instruction cost, so LIR now has a normal cost and Vcost, and we round up to the nearest integer. What's new: changed the threshold from 500 to 3000.
+VectorAOT : We are doing the same as Vector 3 but using AOT mode of graal
+VectorAOTFNOPS : This time we insert FNOPS intead of NOPS

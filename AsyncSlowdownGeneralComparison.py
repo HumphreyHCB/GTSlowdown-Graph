@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # Load the data from the CSV file
-file_path = 'AsyncSlowdownComparison.csv'  # Update with the correct path to your CSV file
+file_path = 'AsyncSlowdownComparisonVector6.csv'  # Update with the correct path to your CSV file
 df = pd.read_csv(file_path)
 
 # List of 14 benchmarks from the Are We Fast Yet (AWFY) benchmark suite

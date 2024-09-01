@@ -16,3 +16,6 @@ share/
 # full of windows bat and exes
 Scripts/
 /site-packages
+xmlToAssembler.py
+out.txt
+instructions.xml

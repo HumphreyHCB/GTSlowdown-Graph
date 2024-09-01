@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the data from the CSV file
-file_path = 'AsyncSlowdownComparison.csv'  # Update with the correct path to your CSV file
+file_path = 'AsyncSlowdownComparisonVector4.csv'  # Update with the correct path to your CSV file
 df = pd.read_csv(file_path)
 
 # Remove the '%' sign and convert the 'Cost' column to numeric values
